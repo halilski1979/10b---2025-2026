@@ -11,7 +11,7 @@
             Console.WriteLine(string.Join('-',num));
 
             Console.WriteLine();
-            //Печат 2
+            //Печатt 2
             foreach (var item in num)
             {
                 Console.WriteLine(item);
