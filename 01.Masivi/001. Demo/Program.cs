@@ -9,12 +9,8 @@ namespace _001._Demo
            //Добавяне на елементи от 1 ред
             int[] num = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
-            Console.WriteLine(string.Join(' ',num));
-            Console.WriteLine();
-
-            foreach (var item in num) { Console.WriteLine(item); }
-
-            for (int i = 0; i < num.Length; i++) { Console.WriteLine(i); }
+            var newNum=num.OrderByDescending(x=>x).Take(3).ToArray();
+            Console.WriteLine(string.Join(' ',newNum));
         }
     }
 }
